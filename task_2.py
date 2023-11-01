@@ -1,5 +1,3 @@
-# Поиск общих участников
-
 def find_common_participants(group_one, group_two, delimiter=','):
     list_group1 = group_one.split(delimiter)
     list_group2 = group_two.split(delimiter)
@@ -7,17 +5,17 @@ def find_common_participants(group_one, group_two, delimiter=','):
     return sorted(intersection_)
 
 
-participants_first_group = "Иванов|Петров|Сидоров"
-participants_second_group = "Петров|Сидоров|Смирнов"
+participants_first_group = "РРІР°РЅРѕРІ|РџРµС‚СЂРѕРІ|РЎРёРґРѕСЂРѕРІ"
+participants_second_group = "РџРµС‚СЂРѕРІ|РЎРёРґРѕСЂРѕРІ|РЎРјРёСЂРЅРѕРІ"
 
 print(find_common_participants(participants_first_group, participants_second_group, delimiter='|'))
 
-participants_first_group_ = "Иванов Петров Сидоров Абвгедейкин"
-participants_second_group_ = "Абвгедейкин Петров Сидоров Смирнов"
+participants_first_group_ = "РРІР°РЅРѕРІ РџРµС‚СЂРѕРІ РЎРёРґРѕСЂРѕРІ"
+participants_second_group_ = "РџРµС‚СЂРѕРІ РЎРёРґРѕСЂРѕРІ РЎРјРёСЂРЅРѕРІ"
 
 print(find_common_participants(participants_first_group_, participants_second_group_, delimiter=' '))
 
-participants_first_group_ = "Иванов,Петров,Шелби,Сидоров,Абвгедейкин"
-participants_second_group_ = "Абвгедейкин,Петров,Сидоров,Шелби,Смирнов"
+participants_first_group_ = "РџРµС‚СЂРѕРІ,РЎРёРґРѕСЂРѕРІ,РЎРјРёСЂРЅРѕРІ"
+participants_second_group_ = "РџРµС‚СЂРѕРІ,РЎРёРґРѕСЂРѕРІ,РЎРјРёСЂРЅРѕРІ"
 
 print(find_common_participants(participants_first_group_, participants_second_group_))
